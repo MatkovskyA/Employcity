@@ -4,3 +4,7 @@
 @import "components/header";
 @import "components/order";
 @import "components/footer";
+
+body {
+  font-family: $font-main;
+}

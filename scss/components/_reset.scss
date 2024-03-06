@@ -36,4 +36,10 @@ img {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  scale: 1.03;
+  cursor: pointer;
 }
