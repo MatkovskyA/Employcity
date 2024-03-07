@@ -1,0 +1,179 @@
+.order {
+  background-image: url(./../resourses/BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 920px;
+}
+
+.order-wrapper {
+  padding-top: 121px;
+}
+
+.order-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: $whiteText;
+  margin-bottom: 80px;
+}
+
+.order-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 209px;
+}
+
+.card-decor {
+  background-color: $blue;
+  border: 3px solid $borderBlue;
+  border-radius: 50%;
+  padding: 22px;
+}
+
+.card-desc {
+  color: $whiteText;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.form-order__inputs {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+
+  .form-order__dropdown,
+  input {
+    width: 100%;
+    font-size: 18px;
+    background-color: #efefef;
+    color: #272733;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+  }
+}
+
+input {
+  padding: 12px 10px;
+}
+
+.form-order__dropdown {
+  position: relative;
+}
+
+.form-order__dropdown::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 10px;
+  height: 8px;
+  background-image: url(./../../resourses/arrow.svg);
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.dropdown-btn {
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+  background-color: #efefef;
+  color: #272733;
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 3px 3px 0 0;
+  border: none;
+}
+
+.active {
+  background-color: $borderListItem;
+  color: $whiteText;
+}
+
+.dropdown-list {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 45px;
+  list-style-type: none;
+  width: 100%;
+  background-color: $bgListItem;
+  overflow: auto;
+  height: 228px;
+  color: #efefef;
+  z-index: 9;
+  scroll-behavior: auto;
+  border: 1px solid $borderListItem;
+  border-radius: 0 0 3px 3px;
+}
+
+.dropdown-list__item {
+  margin: 0;
+  padding: 2px 0 0 10px;
+  font-size: 18px;
+  line-height: 2.3;
+}
+
+.dropdown-list__item:hover {
+  color: $blue;
+}
+
+.visible {
+  display: block;
+}
+
+.dropdown-input__hidden {
+  display: none;
+}
+
+.dropdown-arrow-color path {
+  fill: #ffffff;
+}
+
+.dropdown-arrow {
+  transition: all 0.3s ease-out;
+}
+
+.dropdown-arrow__rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-arrow.active {
+}
+
+// стилизация scrollbar
+
+/* Работает в Firefox */
+// * {
+//   scrollbar-width: thin;
+//   scrollbar-color: blue orange;
+// }
+
+// /* Работает в Chrome, Edge и Safari */
+// *::-webkit-scrollbar {
+//   width: 12px;
+// }
+
+// *::-webkit-scrollbar-track {
+//   background: orange;
+// }
+
+// *::-webkit-scrollbar-thumb {
+//   background-color: blue;
+//   border-radius: 20px;
+//   border: 3px solid orange;
+// }
