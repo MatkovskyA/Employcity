@@ -30,15 +30,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  max-width: 209px;
+  gap: 30px;
+  width: 209px;
 }
 
 .card-decor {
+  position: relative;
   background-color: $blue;
   border: 3px solid $borderBlue;
   border-radius: 50%;
   padding: 22px;
+}
+
+.card-decor__dots {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -113px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+.card-decor__dot {
+  width: 6px;
+  height: 6px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
 }
 
 .card-desc {
@@ -150,9 +168,6 @@ input {
 
 .dropdown-arrow__rotate {
   transform: rotate(180deg);
-}
-
-.dropdown-arrow.active {
 }
 
 // стилизация scrollbar

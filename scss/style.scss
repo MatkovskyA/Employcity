@@ -10,6 +10,12 @@ body {
   font-family: $font-main;
 }
 
+.container {
+  max-width: 1202px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 h1 {
   font-weight: bold;
   font-size: 48px;

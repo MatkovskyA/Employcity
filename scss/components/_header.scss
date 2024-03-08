@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: $bgHeader;
   opacity: 0.9;
   position: fixed;
@@ -6,12 +6,6 @@ header {
   top: 0;
   width: 100%;
   z-index: 10;
-}
-
-.container {
-  max-width: 1172px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .nav {
