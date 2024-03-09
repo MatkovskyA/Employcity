@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -186,6 +187,9 @@ a:hover {
   border: 3px solid #286690;
   border-radius: 50%;
   padding: 22px;
+}
+.card-decor img {
+  animation: animate linear 4s infinite;
 }
 
 .card-decor__dots {
@@ -452,6 +456,23 @@ input {
   fill: white;
 }
 
+@keyframes animate {
+  0% {
+    transform: perspective(23rem) rotateY(0deg);
+  }
+  25% {
+    transform: perspective(23rem) rotateY(90deg);
+  }
+  50% {
+    transform: perspective(23rem) rotateY(180deg);
+  }
+  75% {
+    transform: perspective(23rem) rotateY(270deg);
+  }
+  100% {
+    transform: perspective(23rem) rotateY(360deg);
+  }
+}
 .footer {
   background-color: #3d4050;
 }
@@ -465,28 +486,106 @@ input {
 .footer-text {
   color: #fff;
   font-size: 13px;
-  max-width: 306px;
-  margin-right: 40px;
+  max-width: 250px;
 }
 
 .footer-line {
-  margin: 0 40px;
+  margin: 0 70px 0 40px;
   width: 1px;
   height: 18px;
   background-color: #c3c3c3;
 }
 
 .footer-payment {
+  position: relative;
   font-size: 13px;
   display: flex;
   gap: 68px;
   color: #c3c3c3;
 }
 
+.footer-payment__type {
+  position: relative;
+}
+
+.footer-payment__type.qiwi::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./../../resourses/Frame19.svg);
+}
+
+.footer-payment__type.yandex::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./../../resourses/Frame20.svg);
+}
+
+.footer-payment__type.web::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./../../resourses/Frame21.svg);
+}
+
 .footer-contacts {
   font-size: 13px;
   display: flex;
+  align-items: center;
   gap: 78px;
+}
+.footer-contacts a {
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+.footer-contacts a:hover {
+  cursor: pointer;
+  color: #43abf0;
+}
+
+.footer-contacts__email::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./../../resourses/message.svg);
+}
+
+.footer-contacts__vk::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./../../resourses/В.svg);
 }
 
 body {

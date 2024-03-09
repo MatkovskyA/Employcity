@@ -40,6 +40,9 @@
   border: 3px solid $borderBlue;
   border-radius: 50%;
   padding: 22px;
+  img {
+    animation: animate linear 4s infinite;
+  }
 }
 
 .card-decor__dots {
@@ -307,4 +310,22 @@ input {
 
 .file-label:hover .file-label__icon {
   fill: white;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(23rem) rotateY(0deg);
+  }
+  25% {
+    transform: perspective(23rem) rotateY(90deg);
+  }
+  50% {
+    transform: perspective(23rem) rotateY(180deg);
+  }
+  75% {
+    transform: perspective(23rem) rotateY(270deg);
+  }
+  100% {
+    transform: perspective(23rem) rotateY(360deg);
+  }
 }
