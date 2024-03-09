@@ -144,19 +144,23 @@
                             </ul>
                         </div>
                         <input type="text" name="select-category" value="" class="dropdown-input__hidden">
-                        <input type="email" name="" placeholder="Ваш e-mail">
-                        <input type="text" name="" placeholder="Ваше имя">
+                        <input type="email" name="email" placeholder="Ваш e-mail">
+                        <input type="text" name="name" placeholder="Ваше имя">
                     </div>
 
-                    <div>
-                        <input type="range" id="percents" name="percents" min="0" max="100" value="90" step="1" />
-                        <label for="cowbell">Persent</label>
+                    <div class="form-range">
+                        <div class="form-range_desc">
+                            <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                            <span class="range-value">0</span>
+                            <input class="form-range__input" type="range" id="percents" name="percents" min="0"
+                                value="0" max="100" step="1" />
+                        </div>
+                        <input type="file" class="form-file" title=" " value="">
                     </div>
                 </form>
             </div>
         </div>
     </section>
-
 
     <footer class="footer">
         <div class="container">
@@ -176,6 +180,8 @@
             </div>
         </div>
     </footer>
+
+
     <script src="main.js"></script>
 </body>
 

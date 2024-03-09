@@ -1,12 +1,16 @@
+// import RangeValue from "./modules/range.js";
+
+// RangeValue();
+
 //полифил для метода forEach для NodeList IE.
-if (window.NodeList && !NodeList.prototype.forEach) {
-  NodeList.prototype.forEach = function (callback, thisArg) {
-    thisArg = thisArg || window;
-    for (var i = 0; i < this.length; i++) {
-      callback.call(thisArg, this[i], i, this);
-    }
-  };
-}
+// if (window.NodeList && !NodeList.prototype.forEach) {
+//   NodeList.prototype.forEach = function (callback, thisArg) {
+//     thisArg = thisArg || window;
+//     for (var i = 0; i < this.length; i++) {
+//       callback.call(thisArg, this[i], i, this);
+//     }
+//   };
+// }
 
 const dropdownBtn = document.querySelector(".dropdown-btn");
 const dropdownList = document.querySelector(".dropdown-list");
@@ -61,3 +65,16 @@ function chechDropdonwList() {
     : dropdownList.classList.add("visible");
   dropdownBtn.classList.toggle("active");
 }
+
+//
+
+function getRangeValue() {
+  let rangeInput = document.querySelector(".form-range__input");
+  let rangeValue = document.querySelector(".range-value");
+  rangeValue.textContent = rangeInput.value;
+  rangeInput.oninput = () => {
+    rangeValue.textContent = rangeInput.value + " %";
+  };
+}
+
+getRangeValue();

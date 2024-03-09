@@ -69,6 +69,7 @@
   display: flex;
   gap: 30px;
   justify-content: space-between;
+  margin-bottom: 30px;
 
   .form-order__dropdown,
   input {
@@ -89,26 +90,6 @@ input {
 .form-order__dropdown {
   position: relative;
 }
-
-// .form-order__dropdown::before {
-//   content: "";
-//   position: absolute;
-//   right: 10px;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   display: block;
-//   width: 10px;
-//   height: 8px;
-//   background-image: url(./../../resourses/arrow.svg);
-//   background-repeat: no-repeat;
-//   pointer-events: none;
-//   z-index: 9;
-// }
-
-// .form-order__dropdown::before:active {
-//   transform: rotate(180deg);
-//   color: #ffffff;
-// }
 
 .dropdown-btn {
   text-align: left;
@@ -178,6 +159,75 @@ input {
   fill: $whiteText;
 }
 
+// стилизация range
+
+.form-range {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.form-range_desc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 777px;
+  padding: 0 5px;
+  color: $whiteText;
+  margin-bottom: 5px;
+}
+
+.range-value {
+  font-size: 18px;
+  color: #c4c4c4;
+}
+
+.form-range__input {
+  width: 100%;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-range__input::-webkit-slider-runnable-track {
+  border-radius: 10px;
+  height: 7px;
+  border: 1px solid white;
+  background-color: #c4c4c4;
+}
+
+.form-range__input::-webkit-slider-thumb {
+  background: $blue;
+  border: 2px solid #286690;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+
+.form-range__input::-moz-range-track {
+  border-radius: 10px;
+  height: 7px;
+  border: 1px solid white;
+  background-color: #c4c4c4;
+}
+
+.form-range__input::-moz-range-thumb {
+  background: $blue;
+  border: 2px solid #286690;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form-file {
+  width: 30%;
+}
 // стилизация scrollbar
 
 /* Работает в Firefox */
