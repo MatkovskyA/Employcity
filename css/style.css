@@ -238,28 +238,13 @@ input {
   position: relative;
 }
 
-.form-order__dropdown::before {
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  width: 10px;
-  height: 8px;
-  background-image: url(./../../resourses/arrow.svg);
-  background-repeat: no-repeat;
-  pointer-events: none;
-  z-index: 9;
-}
-
 .dropdown-btn {
   text-align: left;
   width: 100%;
   font-size: 18px;
   background-color: #efefef;
   color: #272733;
-  padding: 12px 10px;
+  padding: 12px 35px 12px 10px;
   cursor: pointer;
   border-radius: 3px 3px 0 0;
   border: none;
@@ -306,16 +291,19 @@ input {
   display: none;
 }
 
-.dropdown-arrow-color path {
-  fill: #ffffff;
-}
-
 .dropdown-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  pointer-events: none;
   transition: all 0.3s ease-out;
+  fill: #3d4050;
 }
 
 .dropdown-arrow__rotate {
   transform: rotate(180deg);
+  fill: #fff;
 }
 
 /* Работает в Firefox */
