@@ -32,3 +32,9 @@ h4 {
   font-weight: bold;
   font-size: 20px;
 }
+
+button,
+input {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

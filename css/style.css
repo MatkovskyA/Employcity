@@ -136,8 +136,6 @@ a:hover {
   text-transform: uppercase;
   border-radius: 4px;
   border: 1px solid black;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 .content__btn:hover {
@@ -324,6 +322,7 @@ input {
   display: flex;
   justify-content: space-between;
   gap: 22px;
+  margin-bottom: 55px;
 }
 
 .form-range_desc {
@@ -385,7 +384,72 @@ input {
 }
 
 .form-file {
-  width: 30%;
+  width: 32%;
+}
+
+.inputSubmit {
+  display: block;
+  padding: 17.5px 140px;
+  margin: 0 auto;
+  border: 1px solid white;
+  color: #fff;
+  background-color: #43abf0;
+  border-radius: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.inputSubmit:hover {
+  color: #272733;
+  background: white;
+  border: #272733;
+}
+
+.form-files {
+  width: 100%;
+  max-width: 375px;
+}
+
+.form-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-label {
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  padding: 12.5px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid #43abf0;
+  color: #272733;
+  cursor: pointer;
+}
+
+.file-label:hover {
+  color: white;
+  background: #272733;
+  border: 1px solid #fff;
+}
+
+.file-label .file-label__icon {
+  transition: all 0.3s ease-in-out;
+  fill: #272733;
+}
+
+.file-label:hover .file-label__icon {
+  fill: white;
 }
 
 .footer {
@@ -450,4 +514,10 @@ h2 {
 h4 {
   font-weight: bold;
   font-size: 20px;
+}
+
+button,
+input {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

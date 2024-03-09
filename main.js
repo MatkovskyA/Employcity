@@ -1,5 +1,7 @@
 import RangeValue from "./modules/range.js";
+import FilesForm from "./modules/formFiles.js";
 
+FilesForm();
 RangeValue();
 
 //полифил для метода forEach для NodeList IE.
@@ -65,16 +67,3 @@ function chechDropdonwList() {
     : dropdownList.classList.add("visible");
   dropdownBtn.classList.toggle("active");
 }
-
-//
-
-// function getRangeValue() {
-//   let rangeInput = document.querySelector(".form-range__input");
-//   let rangeValue = document.querySelector(".range-value");
-//   rangeValue.textContent = rangeInput.value;
-//   rangeInput.oninput = () => {
-//     rangeValue.textContent = rangeInput.value + " %";
-//   };
-// }
-
-// getRangeValue();
