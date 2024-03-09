@@ -1,3 +1,13 @@
+//полифил для метода forEach для NodeList IE.
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = function (callback, thisArg) {
+    thisArg = thisArg || window;
+    for (var i = 0; i < this.length; i++) {
+      callback.call(thisArg, this[i], i, this);
+    }
+  };
+}
+
 const dropdownBtn = document.querySelector(".dropdown-btn");
 const dropdownList = document.querySelector(".dropdown-list");
 const dropdownArrow = document.querySelector(".dropdown-arrow");
