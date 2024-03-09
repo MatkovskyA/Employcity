@@ -518,7 +518,7 @@ input {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-image: url(./../../resourses/Frame19.svg);
+  background-image: url(resourses/Frame19.svg);
 }
 
 .footer-payment__type.yandex::before {
@@ -531,7 +531,7 @@ input {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-image: url(./../../resourses/Frame20.svg);
+  background-image: url(resourses/Frame20.svg);
 }
 
 .footer-payment__type.web::before {
@@ -544,7 +544,7 @@ input {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-image: url(./../../resourses/Frame21.svg);
+  background-image: url(resourses/Frame21.svg);
 }
 
 .footer-contacts {
