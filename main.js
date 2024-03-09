@@ -1,6 +1,6 @@
-// import RangeValue from "./modules/range.js";
+import RangeValue from "./modules/range.js";
 
-// RangeValue();
+RangeValue();
 
 //полифил для метода forEach для NodeList IE.
 // if (window.NodeList && !NodeList.prototype.forEach) {
@@ -68,13 +68,13 @@ function chechDropdonwList() {
 
 //
 
-function getRangeValue() {
-  let rangeInput = document.querySelector(".form-range__input");
-  let rangeValue = document.querySelector(".range-value");
-  rangeValue.textContent = rangeInput.value;
-  rangeInput.oninput = () => {
-    rangeValue.textContent = rangeInput.value + " %";
-  };
-}
+// function getRangeValue() {
+//   let rangeInput = document.querySelector(".form-range__input");
+//   let rangeValue = document.querySelector(".range-value");
+//   rangeValue.textContent = rangeInput.value;
+//   rangeInput.oninput = () => {
+//     rangeValue.textContent = rangeInput.value + " %";
+//   };
+// }
 
-getRangeValue();
+// getRangeValue();

@@ -159,6 +159,19 @@ input {
   fill: $whiteText;
 }
 
+// стилизация scrollbar
+.dropdown-list::-webkit-scrollbar {
+  width: 7px;
+}
+.dropdown-list::-webkit-scrollbar-track {
+  background-color: #3d4050;
+}
+.dropdown-list::-webkit-scrollbar-thumb {
+  height: 53px;
+  background-color: $blue;
+  border-radius: 15px;
+}
+
 // стилизация range
 
 .form-range {
@@ -228,25 +241,3 @@ input {
 .form-file {
   width: 30%;
 }
-// стилизация scrollbar
-
-/* Работает в Firefox */
-// * {
-//   scrollbar-width: thin;
-//   scrollbar-color: blue orange;
-// }
-
-// /* Работает в Chrome, Edge и Safari */
-// *::-webkit-scrollbar {
-//   width: 12px;
-// }
-
-// *::-webkit-scrollbar-track {
-//   background: orange;
-// }
-
-// *::-webkit-scrollbar-thumb {
-//   background-color: blue;
-//   border-radius: 20px;
-//   border: 3px solid orange;
-// }

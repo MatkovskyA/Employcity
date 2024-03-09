@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -307,6 +306,20 @@ input {
   fill: #fff;
 }
 
+.dropdown-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+  background-color: #3d4050;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+  height: 53px;
+  background-color: #43abf0;
+  border-radius: 15px;
+}
+
 .form-range {
   display: flex;
   justify-content: space-between;
@@ -375,7 +388,6 @@ input {
   width: 30%;
 }
 
-/* Работает в Firefox */
 .footer {
   background-color: #3d4050;
 }
