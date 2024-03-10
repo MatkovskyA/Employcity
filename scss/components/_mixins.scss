@@ -9,3 +9,14 @@
   width: 20px;
   height: 20px;
 }
+
+@mixin header-burger__btn {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 35px;
+  height: 3px;
+  background: $whiteText;
+  z-index: 11;
+  cursor: pointer;
+}

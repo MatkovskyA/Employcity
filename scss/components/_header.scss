@@ -9,6 +9,7 @@
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +49,7 @@
   color: $blue;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 927px) {
   .header {
   }
   .container {
@@ -59,8 +60,8 @@
   }
   .nav-logo__title {
   }
+
   .nav-items {
-  }
-  .nav-items__link {
+    display: none;
   }
 }

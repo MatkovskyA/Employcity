@@ -1,18 +1,12 @@
 import RangeValue from "./modules/range.js";
 import FilesForm from "./modules/formFiles.js";
+// import showBurgerMenu from "./modules/burger.js";
+import showNavMenu from "./modules/burger.js";
 
 FilesForm();
 RangeValue();
-
-//полифил для метода forEach для NodeList IE.
-// if (window.NodeList && !NodeList.prototype.forEach) {
-//   NodeList.prototype.forEach = function (callback, thisArg) {
-//     thisArg = thisArg || window;
-//     for (var i = 0; i < this.length; i++) {
-//       callback.call(thisArg, this[i], i, this);
-//     }
-//   };
-// }
+// showBurgerMenu();
+showNavMenu();
 
 const dropdownBtn = document.querySelector(".dropdown-btn");
 const dropdownList = document.querySelector(".dropdown-list");
