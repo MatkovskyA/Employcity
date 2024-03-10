@@ -141,6 +141,12 @@ a:hover {
   display: none;
 }
 
+.footer-burger {
+  flex-direction: column;
+  gap: 20px !important;
+  align-items: end !important;
+}
+
 @media (max-width: 927px) {
   .nav-burger__content {
     height: 100%;
@@ -150,7 +156,9 @@ a:hover {
     background-color: rgb(255, 255, 255);
     border: 3px solid #43abf0;
     display: flex;
+    gap: 50px;
     flex-direction: column;
+    overflow-y: scroll;
   }
   .nav-btn_burger {
     display: block;
@@ -202,7 +210,6 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
   }
   .nav-burger__header img {
     margin-top: 5px;
@@ -227,18 +234,6 @@ a:hover {
   }
   .nav-burger__link:hover {
     background-color: rgb(217, 217, 217);
-  }
-  .nav-burger__footer {
-    height: 100%;
-  }
-  .footer-burger {
-    margin: 0 auto;
-    flex-direction: column;
-    gap: 20px !important;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    align-items: end !important;
   }
   .burger-contacts {
     color: #272733;
