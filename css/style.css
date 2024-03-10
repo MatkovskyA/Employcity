@@ -326,6 +326,9 @@ a:hover {
   .content-list__item {
     font-size: 14px;
   }
+  .content-list__item::marker {
+    content: "";
+  }
 }
 .order {
   background-image: url(./../resourses/BG.webp);

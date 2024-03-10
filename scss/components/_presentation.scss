@@ -80,4 +80,8 @@
   .content-list__item {
     font-size: 14px;
   }
+
+  .content-list__item::marker {
+    content: "";
+  }
 }
