@@ -35,15 +35,15 @@
 
 .footer-payment__type.qiwi::before {
   @include footer-decor;
-  background-image: url(resourses/Frame19.svg);
+  background-image: url(./../resourses/Frame19.svg);
 }
 .footer-payment__type.yandex::before {
   @include footer-decor;
-  background-image: url(resourses/Frame20.svg);
+  background-image: url(./../resourses/Frame20.svg);
 }
 .footer-payment__type.web::before {
   @include footer-decor;
-  background-image: url(resourses/Frame21.svg);
+  background-image: url(./../resourses/Frame21.svg);
 }
 
 .footer-contacts {
@@ -64,9 +64,9 @@
 
 .footer-contacts__email::before {
   @include footer-decor;
-  background-image: url(./../../resourses/message.svg);
+  background-image: url(./../resourses/message.svg);
 }
 .footer-contacts__vk::before {
   @include footer-decor;
-  background-image: url(./../../resourses/В.svg);
+  background-image: url(./../resourses/В.svg);
 }
