@@ -60,7 +60,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px;
+  padding: 32px 0;
 }
 
 .nav-logo {
@@ -259,19 +259,19 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 800px;
+  height: 850px;
 }
 
 .presentation-content {
   padding-top: 203px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 85px;
   max-width: 780px;
 }
 
 .presentation-content__desc h4 {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .presentation-content__btns {
@@ -280,13 +280,14 @@ a:hover {
 }
 
 .presentation-content__list {
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .content-list__item {
   display: list-item;
   font-size: 20px;
   font-weight: normal;
+  line-height: 1.3;
 }
 
 .content-list__item::marker {
@@ -294,9 +295,10 @@ a:hover {
 }
 
 .content__btn {
-  padding: 15px 48px;
+  padding: 14px 55px;
   text-transform: uppercase;
   border-radius: 4px;
+  background-color: white;
   border: 1px solid black;
 }
 
@@ -313,9 +315,6 @@ a:hover {
   }
   .presentation-content {
     text-align: center;
-  }
-  .content-list__item::marker {
-    content: none;
   }
   .presentation-content__btns {
     justify-content: center;
@@ -348,6 +347,14 @@ a:hover {
   color: #fff;
   margin-bottom: 80px;
 }
+.order-title span {
+  color: #43abf0;
+}
+
+.order-title__desc {
+  color: #bbbbbb;
+  letter-spacing: 1px;
+}
 
 .order-cards {
   display: flex;
@@ -361,7 +368,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 17px;
   width: 209px;
 }
 
@@ -510,7 +517,7 @@ input {
   display: flex;
   justify-content: space-between;
   gap: 22px;
-  margin-bottom: 55px;
+  margin-bottom: 42px;
 }
 
 .form-range_desc {
@@ -756,6 +763,7 @@ input {
   padding: 30px 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer-text {
@@ -927,6 +935,7 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 h4 {

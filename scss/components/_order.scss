@@ -17,6 +17,14 @@
   gap: 30px;
   color: $whiteText;
   margin-bottom: 80px;
+  span {
+    color: $blue;
+  }
+}
+
+.order-title__desc {
+  color: #bbbbbb;
+  letter-spacing: 1px;
 }
 
 .order-cards {
@@ -31,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 17px;
   width: 209px;
 }
 
@@ -182,7 +190,7 @@ input {
   display: flex;
   justify-content: space-between;
   gap: 22px;
-  margin-bottom: 55px;
+  margin-bottom: 42px;
 }
 
 .form-range_desc {
@@ -353,8 +361,6 @@ input {
   .order-title {
     margin-bottom: 50px;
   }
-  .order-title__desc {
-  }
   .order-cards {
     max-width: 800px;
     margin: 0 auto 60px;
@@ -363,17 +369,11 @@ input {
   .dots-hidden {
     display: none;
   }
-  .card-decor {
-  }
+
   .card-decor__dots {
     display: none;
   }
-  .card-decor__dot {
-  }
-  .card-desc {
-  }
-  .form-order {
-  }
+
   .form-order__inputs {
     flex-wrap: wrap;
     gap: 20px;
@@ -381,38 +381,17 @@ input {
       font-size: 14px;
     }
   }
-  .form-order__dropdown {
-  }
+
   .dropdown-btn {
     font-size: 14px;
   }
-  .dropdown-arrow {
-  }
-  .dropdown-list {
-  }
-  .dropdown-list__item {
-  }
-  .dropdown-input__hidden {
-  }
+
   .form-range {
     flex-wrap: wrap;
   }
-  .form-range_desc {
-  }
-  .range-value {
-  }
-  .form-range__input {
-  }
-  .form-files {
-  }
+
   .file-label {
     font-size: 14px;
-  }
-  .file-label__icon {
-  }
-  .form-file {
-  }
-  .inputSubmit {
   }
 }
 
@@ -420,18 +399,20 @@ input {
   .order {
     padding-bottom: 90px;
   }
-  .container {
-  }
+
   .order-wrapper {
     padding-top: 80px;
   }
+
   .order-title {
     margin-bottom: 50px;
     text-align: center;
   }
+
   .order-title__desc {
     text-align: center;
   }
+
   .order-cards {
     max-width: 800px;
     margin: 0 auto 60px;
@@ -444,17 +425,11 @@ input {
   .card {
     max-width: 150px;
   }
-  .card-decor {
-  }
+
   .card-decor__dots {
     display: none;
   }
-  .card-decor__dot {
-  }
-  .card-desc {
-  }
-  .form-order {
-  }
+
   .form-order__inputs {
     flex-wrap: wrap;
     gap: 20px;
@@ -462,37 +437,19 @@ input {
       font-size: 14px;
     }
   }
-  .form-order__dropdown {
-  }
+
   .dropdown-btn {
     font-size: 14px;
   }
-  .dropdown-arrow {
-  }
-  .dropdown-list {
-  }
-  .dropdown-list__item {
-  }
-  .dropdown-input__hidden {
-  }
+
   .form-range {
     flex-wrap: wrap;
   }
-  .form-range_desc {
-  }
-  .range-value {
-  }
-  .form-range__input {
-  }
-  .form-files {
-  }
+
   .file-label {
     font-size: 14px;
   }
-  .file-label__icon {
-  }
-  .form-file {
-  }
+
   .inputSubmit {
     padding: 10px 70px;
     font-size: 12px;
