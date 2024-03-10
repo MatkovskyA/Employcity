@@ -2,7 +2,8 @@
   background-image: url(./../resourses/BG.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 920px;
+  height: 100%;
+  padding-bottom: 150px;
 }
 
 .order-wrapper {
@@ -327,5 +328,68 @@ input {
   }
   100% {
     transform: perspective(23rem) rotateY(360deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .order {
+  }
+  .container {
+  }
+  .order-wrapper {
+  }
+  .order-title {
+  }
+  .order-title__desc {
+  }
+  .order-cards {
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
+
+  .dots-hidden {
+    display: none;
+  }
+  .card-decor {
+  }
+  .card-decor__dots {
+  }
+  .card-decor__dot {
+  }
+  .card-desc {
+  }
+  .form-order {
+  }
+  .form-order__inputs {
+  }
+  .form-order__dropdown {
+  }
+  .dropdown-btn {
+  }
+  .dropdown-arrow {
+  }
+  .dropdown-list {
+  }
+  .dropdown-list__item {
+  }
+  .dropdown-input__hidden {
+  }
+  .form-range {
+  }
+  .form-range_desc {
+  }
+  .range-value {
+  }
+  .form-range__input {
+  }
+  .form-files {
+  }
+  .file-label {
+  }
+  .file-label__icon {
+  }
+  .form-file {
+  }
+  .inputSubmit {
   }
 }

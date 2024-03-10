@@ -150,7 +150,8 @@ a:hover {
   background-image: url(./../resourses/BG.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 920px;
+  height: 100%;
+  padding-bottom: 150px;
 }
 
 .order-wrapper {
@@ -474,6 +475,15 @@ input {
     transform: perspective(23rem) rotateY(360deg);
   }
 }
+@media (max-width: 1200px) {
+  .order-cards {
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
+  .dots-hidden {
+    display: none;
+  }
+}
 .footer {
   background-color: #3d4050;
 }
@@ -589,6 +599,21 @@ input {
   background-image: url(./../resourses/В.svg);
 }
 
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-text {
+    max-width: 350px;
+  }
+  .footer-line {
+    display: none;
+  }
+}
 body {
   font-family: "Lato", sans-serif;
 }

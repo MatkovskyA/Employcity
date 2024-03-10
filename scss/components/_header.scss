@@ -47,3 +47,20 @@
 .nav-items__link:hover {
   color: $blue;
 }
+
+@media (max-width: 1200px) {
+  .header {
+  }
+  .container {
+  }
+  .nav {
+  }
+  .nav-logo {
+  }
+  .nav-logo__title {
+  }
+  .nav-items {
+  }
+  .nav-items__link {
+  }
+}

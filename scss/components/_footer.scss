@@ -70,3 +70,38 @@
   @include footer-decor;
   background-image: url(./../resourses/В.svg);
 }
+
+@media (max-width: 1200px) {
+  .footer {
+  }
+  .container {
+  }
+  .footer-wrapper {
+    column-gap: 40px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-text {
+    max-width: 350px;
+  }
+  .footer-line {
+    display: none;
+  }
+  .footer-payment {
+  }
+  .footer-payment__type {
+  }
+  .qiwi {
+  }
+  .yandex {
+  }
+  .web {
+  }
+  .footer-contacts {
+  }
+  .footer-contacts__email {
+  }
+  .footer-contacts__vk {
+  }
+}
