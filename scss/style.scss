@@ -7,6 +7,10 @@
 @import "components/order";
 @import "components/footer";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-main;
 }
@@ -42,4 +46,16 @@ input {
 
 .fixed {
   overflow: hidden;
+}
+
+@media (max-width: 475px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 14px;
+  }
 }

@@ -52,12 +52,18 @@
   color: white;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 817px) {
   .presentation {
+    background-image: linear-gradient(
+      90deg,
+      rgba(125, 204, 221, 0.16147308781869685) 0%,
+      rgba(194, 250, 252, 1) 100%
+    );
+    height: 100%;
   }
-  .container {
-  }
+
   .presentation-content {
+    text-align: center;
   }
   .animate__animated {
   }
@@ -69,10 +75,21 @@
   }
   .presentation-content__list {
   }
-  .content-list__item {
+  .content-list__item::marker {
+    content: none;
   }
   .presentation-content__btns {
+    justify-content: center;
+    margin-bottom: 80px;
   }
   .content__btn {
+    padding: 10px 25px;
   }
+
+  .content-list__item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 475px) {
 }

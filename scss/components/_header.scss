@@ -65,3 +65,22 @@
     display: none;
   }
 }
+
+@media (max-width: 475px) {
+  .header {
+  }
+  .container {
+  }
+  .nav {
+    padding: 15px;
+  }
+  .nav-logo {
+  }
+  .nav-logo__title {
+    font-size: 18px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+}

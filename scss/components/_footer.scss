@@ -105,3 +105,46 @@
   .footer-contacts__vk {
   }
 }
+
+@media (max-width: 475px) {
+  .footer {
+  }
+  .container {
+  }
+  .footer-wrapper {
+    row-gap: 20px;
+  }
+  .footer-text {
+    max-width: 350px;
+  }
+  .footer-line {
+    display: none;
+  }
+  .footer-payment {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-payment__type {
+  }
+  .qiwi {
+  }
+  .yandex {
+  }
+  .web {
+  }
+  .footer-contacts {
+    border-top: 1px solid white;
+    padding-top: 15px;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-contacts__email {
+  }
+  .footer-contacts__vk {
+  }
+}
